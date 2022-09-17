@@ -20,7 +20,7 @@ const addHi = (arr) => {
         💻 run: 
         name = 'hi ' + name; 
         and return it into newArray`);
-        // The above console.log tells us a lot about what is happening when map starts a new turn on the array we passed into it. Each loop map has access to the next item in the array it's attached to.
+        // The above console.log tells us what is happening when map starts a new turn on the array it's manipulating. Each loop, the name variable is equal to the next name in the array.
         // Now we'll add "hi" with the code below.
         return name = 'hi ' + name;
     });
