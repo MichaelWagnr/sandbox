@@ -1,0 +1,18 @@
+{
+    "workbench.colorCustomizations": {
+        "editorBracketPairGuide.background1": "#ff9d6430",
+        "editorBracketPairGuide.background2": "#f7768e30",
+        "editorBracketPairGuide.background3": "#7aa2f730",
+        "editorBracketPairGuide.background4": "#bb9af730",
+        "editorBracketPairGuide.background5": "#e0af6830",
+        "editorBracketPairGuide.background6": "#9ece6a30",
+        "editorBracketPairGuide.activeBackground1": "#ff9d64",
+        "editorBracketPairGuide.activeBackground2": "#f7768e",
+        "editorBracketPairGuide.activeBackground3": "#7aa2f7",
+        "editorBracketPairGuide.activeBackground4": "#bb9af7",
+        "editorBracketPairGuide.activeBackground5": "#e0af68",
+        "editorBracketPairGuide.activeBackground6": "#9ece6a"
+    },
+    "editor.guides.bracketPairs": true,
+    "editor.guides.highlightActiveIndentation": true
+}
