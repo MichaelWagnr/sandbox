@@ -34,25 +34,33 @@
         //  Props as a default argument
         // ========================================================== 
 
-        const App = () => {
-            return (
-                <ExampleComponent firstname="Robert" lastname="Smith" />
-            )
-        }
+        // EXAMPLE --------------------------------------------------
 
-        const ExampleComponent = (props) => {
-            return (
-                <div>Greetings, {props.firstname} {props.lastname}.</div>
-            )
-        }
+        // const App = () => {
+        //     return (
+        //         <ExampleComponent firstname="Robert" lastname="Smith" />
+        //     )
+        // }
+
+        // const ExampleComponent = (props) => {
+        //     return (
+        //         <div>Greetings, {props.firstname} {props.lastname}.</div>
+        //     )
+        // }
+
+        // ----------------------------------------------------------
 
         // This is similar in spirit to the vanilla HTML/JS example above.
 
         // props, is the default argument of our components, we can compare it to how an event handler function almost always looks like:
 
-        const handleExample = (event) => {
-            console.log(event.target) // could be event 'dot' lots n' lots of stuff
-        }
+        // EXAMPLE --------------------------------------------------
+
+        // const handleExample = (event) => {
+        //     console.log(event.target) // could be event 'dot' lots n' lots of stuff
+        // }
+
+        // ----------------------------------------------------------
 
         // Event is going to be an object with a bunch of details about the event that setoff the function.
         // We could name event anything, but by convention we call it 'event' or 'e' for short
