@@ -44,9 +44,9 @@ const personB = {
     canDrive: false
 }
 
-//                        | undefined, falsey  || expected output: "Good morning Friend!"
+//                        | undefined, falsey  || expected output: "Good morning Smith"
 console.log(`Good morning ${ personA.name.last || 'Friend!' }`)
-//                        | 'Jon', truthy      || expected output: "Good morning Jon"
+//                        | 'Jon', truthy      || expected output: "Good morning Friend!"
 console.log(`Good morning ${ personB.name.last || 'Friend!' }`)
 
 // 1) Javascript will check the conditions on either side of the ||
