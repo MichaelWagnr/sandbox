@@ -1,0 +1,73 @@
+<!-- Boilerplate -->
+<!DOCTYPE html><html lang="en"><head><title>Props example</title><style>body{background-color: #333; color: #EEE; display: grid; place-content: center; height: 100vh;} div{border: 1px solid #EEE; padding: 10px;}</style></head>
+<!-- Boilerplate -->
+
+<body>
+    <!-- We can run this file with liveserver or locally to see the result -->
+    
+    <!-- Target div                       -->
+    <!-- Data-... is a valid HTML attribute that can be referenced from the elements dataset property -->
+    <div data-firstname="Robert" data-lastname="Smith"></div>
+
+    <!-- Vanilla JavaScript, no React     -->
+    <script>
+        // Grab div element with querySelector 
+        const div = document.querySelector('div');
+        // Declare const firstname = div.dataset.firstname with destructuring
+        // Declare const lastname = div.dataset.lastname with destructuring
+        const {firstname, lastname} = div.dataset;
+        // Change the text content of our div borrowing from the dataset attributes/properties
+        div.textContent = `Greetings, ${firstname} ${lastname}.`
+
+        // ==========================================================
+        //  A model/analogy for props
+        // ==========================================================
+
+        // 1) We write entirely made up data attributes in our HTML and set them to values of our choosing.
+        // 2) We can then reference these values elsewhere in our Javascript, and use them to dynamically create the content of our elements.
+
+        // We can see the similarity with Props (Props resemble HTML Attributes). 
+        // 1) We write what looks to be attributes in our JSX (JSX resembles HTML). 
+        // 2) Those values become available to our Components where we can use those values to dynamically change our Components.
+        
+        // ==========================================================
+        //  Props as a default argument
+        // ========================================================== 
+
+        const App = () => {
+            return (
+                <ExampleComponent firstname="Robert" lastname="Smith" />
+            )
+        }
+
+        const ExampleComponent = (props) => {
+            return (
+                <div>Greetings, {props.firstname} {props.lastname}.</div>
+            )
+        }
+
+        // This is similar in spirit to the vanilla HTML/JS example above.
+
+        // props, is the default argument of our components, we can compare it to how an event handler function almost always looks like:
+
+        const handleExample = (event) => {
+            console.log(event.target) // could be event 'dot' lots n' lots of stuff
+        }
+
+        // Event is going to be an object with a bunch of details about the event that setoff the function.
+        // We could name event anything, but by convention we call it 'event' or 'e' for short
+
+        // Props is like an event. The component receives by default an object containing anything that was passed down as an attribute/property from it's parent component.
+        // We could name props anything, but by convention we name it props.
+
+        // Event handler functions need 'event' to use the event object meaningfully. 
+        // Functional Components need 'props' to use the props object meaningfully.
+
+        // event.target = ...
+        // props.firstname = ...
+
+    </script>
+
+</body>
+
+</html>
