@@ -34,6 +34,8 @@
         //  Props as a default argument
         // ========================================================== 
 
+        // This is similar in spirit to the vanilla HTML/JS example above:
+
         // EXAMPLE --------------------------------------------------
 
         // const App = () => {
@@ -50,8 +52,6 @@
 
         // ----------------------------------------------------------
 
-        // This is similar in spirit to the vanilla HTML/JS example above.
-
         // props, is the default argument of our components, we can compare it to how an event handler function almost always looks like:
 
         // EXAMPLE --------------------------------------------------
@@ -65,11 +65,11 @@
         // Event is going to be an object with a bunch of details about the event that setoff the function.
         // We could name event anything, but by convention we call it 'event' or 'e' for short
 
-        // Props is like an event. The component receives by default an object containing anything that was passed down as an attribute/property from it's parent component.
+        // Props is like an event parameter. The component receives by default an object containing anything that was passed down as an attribute/property from it's parent component.
         // We could name props anything, but by convention we name it props.
 
-        // Event handler functions need 'event' to use the event object meaningfully. 
-        // Functional Components need 'props' to use the props object meaningfully.
+        // Event handler functions need an 'event' parameter to use the event object meaningfully. 
+        // Functional Components need a 'props' parameter to use the props object meaningfully.
 
         // event.target = ...
         // props.firstname = ...
