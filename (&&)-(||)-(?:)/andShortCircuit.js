@@ -52,8 +52,8 @@ personB.canDrive && console.log(`${personB.name.first} can drive`);
 
 // 1) Javascript will check the conditions on either side of the &&
 // 2) If the first condition is false - Javascript gives up, there's no chance both sides of && are true
-// 3) If the first conidtion is true - Javascript goes to work on the other side of &&
-// 4) If the other side of && is just a chunk of code - Javascript does it anyways waiting looking for true/false
-// 5) We don't offer a 3rd step so the && stalls out once JS finishes the step 2, right-side of &&
+// 3) If the first condition is true - Javascript goes to work on the other side of &&
+// 4) If the other side of && is just a chunk of code - Javascript does it anyways looking for true/false
+// 5) We don't offer a 3rd step so the && stalls out once JS finishes the step 2 (right-side of &&)
 
 // This is a && short circuit! A somewhat fancy way of writing an If statement with one "is this true?" condition

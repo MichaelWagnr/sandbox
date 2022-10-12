@@ -41,6 +41,8 @@ personB.age > 16
     ? console.log(`${personB.name.first} is old enough to start driving`)
     : console.log(`${personB} can't drive...`)
 
+    // expected output: "Jon is old enough to start driving"
+
 // We don't have any semi-colons here. So JS will clear the white space, and treat it as though it were one line.
 // We get a clean:
 

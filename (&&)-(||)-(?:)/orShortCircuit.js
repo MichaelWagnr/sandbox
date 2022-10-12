@@ -21,7 +21,7 @@ const example = () => {
 }
 
 // ==================================================================
-    // Short circuiting with &&
+    // Short circuiting with ||
 // ==================================================================
 
 // We can trick JS into performing a piece of code if the first condition of || is false or falsey:
@@ -51,10 +51,10 @@ console.log(`Good morning ${ personB.name.last || 'Friend!' }`)
 
 // 1) Javascript will check the conditions on either side of the ||
 // 2) If the first condition is true - Javascript gives up, atleast one side is TRUE, good enough for JS
-// 3) If the first conidtion is false - Javascript goes to work on the other side of ||
-// 4) If the other side of || is just a chunk of code - Javascript does it anyways waiting looking for true/false
-// 5) We don't offer a 3rd step so the || stalls out once JS finishes the step 2, right-side of ||
+// 3) If the first condition is false - Javascript goes to work on the other side of ||
+// 4) If the other side of || is just a chunk of code - Javascript does it anyways looking for true/false
+// 5) We don't offer a 3rd step so the || stalls out once JS finishes the step 2 (right-side of ||)
 
-// This is a || short circuit! A somewhat fancy way of writing an If statement if one condition is false.
+// This is a || short circuit! A somewhat fancy way of writing an If statement with one "is this false?" condition.
 // This is particularly handy if we don't know if something exists and want a fallback/default, as in the above example where our person object could have a name, or not. We definitely don't want to accidentally greet:
 // "Good morning undefined" 😅
