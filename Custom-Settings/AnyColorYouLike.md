@@ -1,4 +1,5 @@
 The following link is a reference for what setting changes what part of the VSCode UI:
+
 https://code.visualstudio.com/api/references/theme-color
 
 1. Copy/Paste everything below into your settings.json (see README.md) likely at the bottom of the file.
@@ -11,6 +12,7 @@ https://code.visualstudio.com/api/references/theme-color
 
     // List of Syntax Colors are copied from Tokyo Night Theme's github repo
     // https://github.com/enkia/tokyo-night-vscode-theme
+
     // #f7768e #f7768e	This keyword, HTML elements, Regex group symbol, CSS units, Terminal Red
     // #ff9e64 #ff9e64	Number and Boolean constants, Language support constants
     // #e0af68 #e0af68	Function parameters, Regex character sets, Terminal Yellow
