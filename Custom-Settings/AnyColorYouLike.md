@@ -3,6 +3,7 @@ The following link is a reference for what setting changes what part of the VSCo
 https://code.visualstudio.com/api/references/theme-color
 
 1. Copy/Paste everything below into your settings.json (see README.md) likely at the bottom of the file.
+   **_ On hover in the top-right corner of the following JS code is a button to copy all of the text _**
 2. Uncomment desired color customization and use appropriate color conventions as the value in "",
 
 ```js
