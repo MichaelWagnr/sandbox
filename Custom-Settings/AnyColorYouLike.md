@@ -8,6 +8,7 @@ https://code.visualstudio.com/api/references/theme-color
 // Colors ===========================================================================
 
     // "workbench.colorTheme": "Tokyo Night",
+
     // List of Syntax Colors are copied from Tokyo Night Theme's github repo
     // https://github.com/enkia/tokyo-night-vscode-theme
     // #f7768e #f7768e	This keyword, HTML elements, Regex group symbol, CSS units, Terminal Red
@@ -32,21 +33,21 @@ https://code.visualstudio.com/api/references/theme-color
     // #16161E : VScode default Terminal Black
 
     // Specific Character/Syntax Colors
-    "editor.tokenColorCustomizations": {
-        // Theme:
-        "[Tokyo Night]": {
-          "textMateRules": [
-            {
-            // Developer: Inspect Editor Tokens and Scopes:
-            // https://stackoverflow.com/questions/70615091/highlight-bracket-vsc-tokyo-night
-              "scope": "punctuation.definition.tag",
-              "settings": {
-                // "foreground": "#ff9e64"  // <-- Change the color here
-              }
-            }
-          ]
-        }
-      },
+    // "editor.tokenColorCustomizations": {
+    //     // Theme:
+    //     "[Tokyo Night]": {
+    //       "textMateRules": [
+    //         {
+    //         // Developer: Inspect Editor Tokens and Scopes:
+    //         // https://stackoverflow.com/questions/70615091/highlight-bracket-vsc-tokyo-night
+    //           "scope": "punctuation.definition.tag",
+    //           "settings": {
+    //             // "foreground": "#ff9e64"  // <-- Change the color here
+    //           }
+    //         }
+    //       ]
+    //     }
+    //   },
 
     // "editor.guides.bracketPairs": true,
     // "editor.guides.highlightActiveIndentation": true,
